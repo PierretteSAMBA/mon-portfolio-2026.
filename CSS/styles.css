@@ -15,10 +15,11 @@
 }
 
 body {
-    background-color: var(--gris-tres-clair)
-    font-family: Roboto, sans-serif;
+    background-color: var(--gris-tres-clair);
+    font-family: Roboto , sans-serif;
     Line-height: 1.6;
 }
+
 header{
     background-color: white;
     box-shadow: 2px 6px 10px rgba(0,0,0,0.07);
@@ -80,4 +81,54 @@ a.active {
 
 a.active::after {
     width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 7rem 2rem;
+
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--violet-foncé);
+}
+
+.hero h1 {
+    color: var(--violet-foncé);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p {
+    color: var(--gris-tres-foncé);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero a:hover {
+    background-color: var(--violet-foncé);
+    transform: translateY(-3px);
 }
