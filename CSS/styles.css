@@ -83,7 +83,7 @@ a.active::after {
     width: 100%;
 }
 
-.hero {
+.ruth {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,7 @@ a.active::after {
 
 }
 
-.hero img {
+.ruth img {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -101,20 +101,20 @@ a.active::after {
     border: 5px solid var(--violet-foncé);
 }
 
-.hero h1 {
+.ruth h1 {
     color: var(--violet-foncé);
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
 
-.hero p {
+.ruth p {
     color: var(--gris-tres-foncé);
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
 }
 
-.hero a {
+.ruth a {
     text-decoration: none;
     display: inline-block;
     background-color: var(--violet-doux);
@@ -128,7 +128,38 @@ a.active::after {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.hero a:hover {
+.ruth a:hover {
     background-color: var(--violet-foncé);
     transform: translateY(-3px);
+}
+
+.apropos {
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+section h2 {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-foncé);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
+.apropos P {
+    margin-bottom: 2rem;
+    color: var(--gris-foncé);
+    font-size: 1.3rem;
 }
