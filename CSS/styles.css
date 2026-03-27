@@ -140,7 +140,7 @@ a.active::after {
 }
 
 section h2 {
-    color: var(--violet-doux);
+    color: var(--violet-foncé);
     font-size: 2.6rem;
     font-weight: 700;
     position: relative;
@@ -163,3 +163,69 @@ section h2::after {
     color: var(--gris-foncé);
     font-size: 1.3rem;
 }
+
+.compétences table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.compétences table th, .compétences table td {
+    padding: 15px;
+}
+
+.compétences table thead {
+    background-color: var(--violet-foncé);
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.compétences table tbody td {
+    border-bottom: 1px solid var(--gris-tres-foncé);
+}
+
+.compétences table tbody tr:nth-child(even) {
+    background-color: #FDFDFD;
+}
+
+.compétences table tbody tr {
+    transition: backgroud-color 0.3s ease;
+}
+
+.compétences table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.compétences table thead th {
+    text-align: left;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+footer a img {
+    display: inline;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0.10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a img:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);
+}
+
